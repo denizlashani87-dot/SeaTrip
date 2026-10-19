@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover extraordinary destinations, hidden islands and untouched nature around the world.">
+  <title>SeaTrip | کشف جهان</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="#home">Sea<span>Trip</span><i>✦</i></a>
+
+    <nav>
+      <a href="#home" data-fa="خانه" data-en="Home">خانه</a>
+      <a href="#destinations" data-fa="مقاصد" data-en="Destinations">مقاصد</a>
+      <a href="#experience" data-fa="تجربه‌ها" data-en="Experiences">تجربه‌ها</a>
+      <a href="#contact" data-fa="تماس با ما" data-en="Contact">تماس با ما</a>
+    </nav>
+
+    <button id="languageBtn" class="language-btn">EN | فارسی</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content reveal">
+        <span class="eyebrow" data-fa="جهان فراتر از تصور توست" data-en="THE WORLD IS YOURS TO DISCOVER">
+          جهان فراتر از تصور توست
+        </span>
+
+        <h1 data-fa="راهی به سوی<br>شگفتی‌های پنهان زمین"
+            data-en="Escape the Ordinary.<br>Discover the Extraordinary.">
+          راهی به سوی<br>شگفتی‌های پنهان زمین
+        </h1>
+
+        <p data-fa="از جزایر دورافتاده تا کوهستان‌های افسانه‌ای؛ ماجراجویی بعدی تو از اینجا شروع می‌شود."
+           data-en="From remote islands to legendary mountains, your next adventure starts here.">
+          از جزایر دورافتاده تا کوهستان‌های افسانه‌ای؛
+          ماجراجویی بعدی تو از اینجا شروع می‌شود.
+        </p>
+
+        <a href="#destinations" class="primary-btn"
+           data-fa="کشف مقصدها ←" data-en="Explore destinations →">
+          کشف مقصدها ←
+        </a>
+      </div>
+
+      <div class="hero-bottom">
+        <span>01 / 06 CONTINENTS</span>
+        <span data-fa="جهان را جور دیگری ببین" data-en="SEE THE WORLD DIFFERENTLY">
+          جهان را جور دیگری ببین
+        </span>
+      </div>
+    </section>
+
+    <section class="intro section-space" id="experience">
+      <div>
+        <span class="eyebrow dark" data-fa="فراتر از مسیرهای همیشگی" data-en="BEYOND THE USUAL">
+          فراتر از مسیرهای همیشگی
+        </span>
+        <h2 data-fa="برای کسانی که<br>متفاوت سفر می‌کنند"
+            data-en="For those who<br>travel differently">
+          برای کسانی که<br>متفاوت سفر می‌کنند
+        </h2>
+      </div>
+
+      <p data-fa="مقصدهایی را کشف کن که طبیعت در آن‌ها هنوز حرف اول را می‌زند؛ از جنگل‌های مه‌آلود و دریاچه‌های فیروزه‌ای تا صحراهای اسرارآمیز."
+         data-en="Discover places where nature takes the lead: misty forests, turquoise lakes and mysterious deserts.">
+        مقصدهایی را کشف کن که طبیعت در آن‌ها هنوز حرف اول را می‌زند؛
+        از جنگل‌های مه‌آلود و دریاچه‌های فیروزه‌ای تا صحراهای اسرارآمیز.
+      </p>
+    </section>
+
+    <section class="destinations section-space" id="destinations">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow dark" data-fa="سیاره زمین، بی‌نهایت شگفتی" data-en="ONE PLANET, ENDLESS WONDERS">
+            سیاره زمین، بی‌نهایت شگفتی
+          </span>
+          <h2 data-fa="مقصد بعدی تو کجاست؟" data-en="Where will you go next?">
+            مقصد بعدی تو کجاست؟
+          </h2>
+        </div>
+        <span class="destination-count" id="destinationCount">12 مقصد</span>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter active" data-region="all"
+          data-fa="همه مقصدها" data-en="All places">همه مقصدها</button>
+        <button class="filter" data-region="asia"
+          data-fa="آسیا" data-en="Asia">آسیا</button>
+        <button class="filter" data-region="europe"
+          data-fa="اروپا" data-en="Europe">اروپا</button>
+        <button class="filter" data-region="africa"
+          data-fa="آفریقا" data-en="Africa">آفریقا</button>
+        <button class="filter" data-region="north"
+          data-fa="آمریکای شمالی" data-en="North America">آمریکای شمالی</button>
+        <button class="filter" data-region="south"
+          data-fa="آمریکای جنوبی" data-en="South America">آمریکای جنوبی</button>
+        <button class="filter" data-region="oceania"
+          data-fa="اقیانوسیه" data-en="Oceania">اقیانوسیه</button>
+      </div>
+
+      <div class="destination-grid" id="destinationGrid"></div>
+    </section>
+
+    <section class="quote-banner">
+      <div class="quote-overlay"></div>
+      <div class="quote-content reveal">
+        <span class="eyebrow" data-fa="یک جهان، هزاران داستان" data-en="ONE WORLD, A THOUSAND STORIES">
+          یک جهان، هزاران داستان
+        </span>
+        <h2 data-fa="بعضی خاطرات،<br>با یک بلیت شروع می‌شوند."
+            data-en="Some memories<br>begin with a ticket.">
+          بعضی خاطرات،<br>با یک بلیت شروع می‌شوند.
+        </h2>
+      </div>
+    </section>
+
+    <section class="newsletter section-space">
+      <span class="eyebrow dark" data-fa="الهام سفر بعدی تو" data-en="YOUR NEXT INSPIRATION">
+        الهام سفر بعدی تو
+      </span>
+      <h2 data-fa="دنیا منتظر کشف شدن است." data-en="The world is waiting to be discovered.">
+        دنیا منتظر کشف شدن است.
+      </h2>
+      <p data-fa="یک مقصد تازه انتخاب کن و ماجراجویی را شروع کن."
+         data-en="Choose a new destination and start your adventure.">
+        یک مقصد تازه انتخاب کن و ماجراجویی را شروع کن.
+      </p>
+      <a href="#destinations" class="primary-btn"
+         data-fa="شروع اکتشاف" data-en="Start exploring">شروع اکتشاف</a>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <a class="logo footer-logo" href="#home">Sea<span>Trip</span><i>✦</i></a>
+    <p data-fa="جهان بزرگ‌تر از آن است که در یک جا بمانی."
+       data-en="The world is too big to stay in one place.">
+      جهان بزرگ‌تر از آن است که در یک جا بمانی.
+    </p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="mailto:hello@example.com">Email</a>
+    </div>
+    <small>© 2026 SeaTrip — Travel beyond the ordinary.</small>
+  </footer>
+
+  <div class="modal" id="destinationModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <img id="modalImage" src="" alt="Destination">
+      <div class="modal-content">
+        <span class="eyebrow dark" id="modalRegion"></span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div class="weather-box" id="weatherBox" aria-live="polite"></div>
+        <a id="mapLink" class="primary-btn" target="_blank" rel="noopener noreferrer"
+           href="#">مشاهده روی نقشه ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
